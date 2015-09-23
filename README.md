@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 スタミナは内部では時刻の形式で保持しているので、
-datetime型とかでカラムを作ってあげます。
+datetime型が格納できる入れ物(カラムなど)を作ってあげます。
 
 ```ruby
  class User < ActiveRecord::Base
@@ -31,7 +31,8 @@ datetime型とかでカラムを作ってあげます。
 ````
 
 スタミナを導入したいモデルにモジュールをincludeし、
-add_stamina_point(引数はdatetime型のカラム名)を追加することで以下のメソッドが追加されます。
+add_stamina_point(引数はカラム等)を追加することで以下のようなメソッドが追加されます。
+(staminaの部分はadd_stamina_pointで指定したものが入ります)
 
 ```ruby
 max_sutamina_point                       # 最大スタミナ(デフォルト: 100)
