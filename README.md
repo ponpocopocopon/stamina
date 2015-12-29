@@ -35,7 +35,7 @@ add_stamina_point(引数はカラム等)を追加することで以下のよう�
 (staminaの部分はadd_stamina_pointで指定したものが入ります)
 
 ```ruby
-max_sutamina_point                       # 最大スタミナ(デフォルト: 100)
+max_stamina_point                        # 最大スタミナ(デフォルト: 100)
 stamina_point_recovery_second            # 1回復に要する秒数(デフォルト: 5秒)
 fill_stamina_point_second                # 完全回復に必要な秒数
 stamina_point(nowtime = Time.current)    # 現在のスタミナ量
@@ -52,7 +52,7 @@ use_stamina_point                        # スタミナの使用(return: 成功[
    include Stamina
    add_stamina_point :stamina
    
-   def max_sutamina_point
+   def max_stamina_point
      300
    end
    
